@@ -45,22 +45,22 @@ export default function HeroSection() {
   const features = [
     {
       title: "+300 crypto",
-      icon: "/placeholder.svg?height=80&width=80",
+      icon: "/images/Group2085663741.png",
       gradient: "from-blue-500/20 to-purple-500/20",
     },
     {
       title: "Trusted and safe experience",
-      icon: "/placeholder.svg?height=80&width=80",
+      icon: "/images/Group2085663746.png",
       gradient: "from-indigo-500/20 to-blue-500/20",
     },
     {
       title: "No KYC",
-      icon: "/placeholder.svg?height=80&width=80",
+      icon: "/images/Group2085663743.png",
       gradient: "from-blue-400/20 to-cyan-500/20",
     },
     {
       title: "Premium leagues",
-      icon: "/placeholder.svg?height=80&width=80",
+      icon: "/images/Group2085663745.png",
       gradient: "from-purple-500/20 to-blue-500/20",
     },
   ];
@@ -87,10 +87,10 @@ export default function HeroSection() {
       <div className="relative min-h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/images/bannerimg.png"
             alt="Crypto Background"
             fill
-            className="object-cover opacity-50"
+            className="object-cover opacity-100"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A0520]/80 to-[#0A0520]" />
         </div>

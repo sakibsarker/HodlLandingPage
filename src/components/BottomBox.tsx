@@ -27,7 +27,7 @@ export default function BottomBox() {
             <div className="w-full lg:w-1/2">
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-[#1a1627]">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/images/imgbox.png"
                   alt="HODL Community Member"
                   width={800}
                   height={600}

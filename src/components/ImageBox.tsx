@@ -3,18 +3,18 @@ import Link from "next/link";
 
 export default function ImageBox() {
   const liveGamingProviders = [
-    { name: "EvolutionGaming", image: "/placeholder.svg?height=300&width=225" },
-    { name: "SaGaming", image: "/placeholder.svg?height=300&width=225" },
-    { name: "Sexy Gaming", image: "/placeholder.svg?height=300&width=225" },
-    { name: "Ali bet", image: "/placeholder.svg?height=300&width=225" },
+    { name: "EvolutionGaming", image: "/images/Maskgroup.png" },
+    { name: "SaGaming", image: "/images/Maskgroup2.png" },
+    { name: "Sexy Gaming", image: "/images/Maskgroup3.png" },
+    { name: "Ali bet", image: "/images/Maskgroup4.png" },
   ];
 
   const digitalCasinoProviders = [
-    { name: "Pragmatic play", image: "/placeholder.svg?height=300&width=225" },
-    { name: "Habanero", image: "/placeholder.svg?height=300&width=225" },
-    { name: "TomHorn", image: "/placeholder.svg?height=300&width=225" },
-    { name: "Ion Casino", image: "/placeholder.svg?height=300&width=225" },
-    { name: "Green Dragon", image: "/placeholder.svg?height=300&width=225" },
+    { name: "Pragmatic play", image: "/images/img1.png" },
+    { name: "Habanero", image: "/images/img2.png" },
+    { name: "TomHorn", image: "/images/img3.png" },
+    { name: "Ion Casino", image: "/images/img4.png" },
+    { name: "Green Dragon", image: "/images/img5.png" },
   ];
 
   return (
