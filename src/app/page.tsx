@@ -1,10 +1,17 @@
 "use client";
+import BottomBox from "@/components/BottomBox";
+import Box from "@/components/box";
+import HeroSection from "@/components/HeroSection";
+import ImageBox from "@/components/ImageBox";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <h1 className="text-red-500">Home page</h1>
+      <HeroSection />
+      <Box />
+      <ImageBox />
+      <BottomBox />
     </>
   );
 };
