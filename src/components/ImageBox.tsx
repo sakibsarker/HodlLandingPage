@@ -18,7 +18,7 @@ export default function ImageBox() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0F0B1F] p-6 md:p-12">
+    <div className="min-h-screen bg-gradient-to-br from-[#1a1333] to-[#2a1f4d] p-6 md:p-12">
       <div className="max-w-[1400px] mx-auto space-y-12">
         {/* Live Gaming Section */}
         <section className="space-y-6">
@@ -42,14 +42,13 @@ export default function ImageBox() {
                   alt={provider.name}
                   width={225}
                   height={300}
-                  className="w-full h-[300px] object-cover"
+                  className="w-full h-full object-cover rounded-sm"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4">
-                    <h3 className="text-white text-lg font-medium">
-                      {provider.name}
-                    </h3>
-                  </div>
+
+                <div className="mt-2">
+                  <h3 className="text-white text-lg font-medium">
+                    {provider.name}
+                  </h3>
                 </div>
               </div>
             ))}
@@ -57,7 +56,7 @@ export default function ImageBox() {
         </section>
 
         {/* Digital Casino Section */}
-        <section className="space-y-6">
+        <section className="space-y-6 ">
           <div className="flex justify-between items-center">
             <h2 className="text-2xl font-bold text-white">DIGITAL CASINO</h2>
             <Link
@@ -78,14 +77,13 @@ export default function ImageBox() {
                   alt={provider.name}
                   width={225}
                   height={300}
-                  className="w-full h-[300px] object-cover"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4">
-                    <h3 className="text-white text-lg font-medium">
-                      {provider.name}
-                    </h3>
-                  </div>
+
+                <div className="mt-2">
+                  <h3 className="text-white text-lg font-medium">
+                    {provider.name}
+                  </h3>
                 </div>
               </div>
             ))}

@@ -138,7 +138,7 @@ export default function HeroSection() {
                 key={index}
                 className={`absolute`}
                 style={{
-                  left: `${15 + index * 17}%`,
+                  left: `${5 + index * 22}%`,
                   zIndex: index,
                 }}
                 initial={{ opacity: 0, y: 20, rotateY: -30 }}
@@ -156,8 +156,8 @@ export default function HeroSection() {
                 <Image
                   src={feature.icon}
                   alt="bannerimage"
-                  width={300}
-                  height={200}
+                  width={350}
+                  height={300}
                   className="object-cover"
                 />
               </motion.div>
