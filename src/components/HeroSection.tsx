@@ -1,45 +1,30 @@
 import Image from "next/image";
-import {
-  FaShoppingCart,
-  FaGamepad,
-  FaReddit,
-  FaEnvelope,
-  FaBlogger,
-  FaSpotify,
-  FaDollarSign,
-  FaTwitter,
-  FaBitcoin,
-  FaEthereum,
-  FaLock,
-  FaTrophy,
-  FaUserShield,
-  FaGem,
-  FaChartLine,
-  FaCrown,
-  FaDice,
-  FaCoins,
-} from "react-icons/fa";
 
 export default function HeroSection() {
-  const navIcons = [
-    { icon: FaGamepad, color: "bg-purple-600" },
-    { icon: FaShoppingCart, color: "bg-red-500" },
-    { icon: FaReddit, color: "bg-orange-500" },
-    { icon: FaEnvelope, color: "bg-yellow-500" },
-    { icon: FaBlogger, color: "bg-blue-500" },
-    { icon: FaSpotify, color: "bg-green-500" },
-    { icon: FaDollarSign, color: "bg-indigo-500" },
-    { icon: FaTwitter, color: "bg-blue-400" },
-    { icon: FaBitcoin, color: "bg-orange-400" },
-    { icon: FaEthereum, color: "bg-purple-400" },
-    { icon: FaLock, color: "bg-gray-500" },
-    { icon: FaTrophy, color: "bg-yellow-400" },
-    { icon: FaUserShield, color: "bg-green-400" },
-    { icon: FaGem, color: "bg-pink-400" },
-    { icon: FaChartLine, color: "bg-blue-300" },
-    { icon: FaCrown, color: "bg-yellow-300" },
-    { icon: FaDice, color: "bg-red-400" },
-    { icon: FaCoins, color: "bg-yellow-500" },
+  const navImages = [
+    "/images/Symbol.png",
+    "/images/Symbol1.png",
+    "/images/Symbol2.png",
+    "/images/Symbol4.png",
+    "/images/Symbol5.png",
+    "/images/Symbol6.png",
+    "/images/Symbol7.png",
+    "/images/Symbol8.png",
+    "/images/Symbol9.png",
+    "/images/Symbol10.png",
+    "/images/Symbol11.png",
+    "/images/Symbol12.png",
+    "/images/Symbol13.png",
+    "/images/Symbol14.png",
+    "/images/Symbol15.png",
+    "/images/Symbol16.png",
+    "/images/Symbol17.png",
+    "/images/Symbol18.png",
+    "/images/Symbol19.png",
+    "/images/Symbol20.png",
+    "/images/Symbol21.png",
+    "/images/Symbol22.png",
+    "/images/Symbol23.png",
   ];
 
   const features = [
@@ -63,12 +48,18 @@ export default function HeroSection() {
       <div className="w-full bg-[#110828]/80 backdrop-blur-sm border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 py-2">
           <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
-            {navIcons.map((item, index) => (
+            {navImages.map((imageSrc, index) => (
               <div
                 key={index}
-                className={`flex-shrink-0 w-10 h-10 ${item.color} rounded-lg shadow-lg hover:scale-110 transition-transform duration-200 cursor-pointer flex items-center justify-center`}
+                className="flex-shrink-0 w-10 h-10 rounded-lg shadow-lg hover:scale-110 transition-transform duration-200 cursor-pointer"
               >
-                <item.icon className="w-5 h-5 text-white" />
+                <Image
+                  src={imageSrc}
+                  alt={`Navigation Icon ${index + 1}`}
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
             ))}
           </div>
