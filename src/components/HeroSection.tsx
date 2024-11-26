@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   const navImages = [
@@ -42,13 +43,24 @@ export default function HeroSection() {
     },
   ];
 
+  const loopedImages = [...navImages, ...navImages, ...navImages, ...navImages];
+
   return (
     <div className="min-h-screen bg-[#0A0520] overflow-hidden">
       {/* Navigation Icons */}
-      <div className="w-full bg-[#110828]/80 backdrop-blur-sm border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-4 py-2">
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
-            {navImages.map((imageSrc, index) => (
+      <div className="w-full p-2 bg-[#110828]/80 backdrop-blur-sm border-b border-white/5">
+        <div className="overflow-hidden">
+          <motion.div
+            className="flex gap-4"
+            animate={{ x: ["0%", "-50%"] }} // Adjust "-50%" based on content
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 20, // Adjust to control speed
+              ease: "linear",
+            }}
+          >
+            {loopedImages.map((imageSrc, index) => (
               <div
                 key={index}
                 className="flex-shrink-0 w-10 h-10 rounded-lg shadow-lg hover:scale-110 transition-transform duration-200 cursor-pointer"
@@ -62,7 +74,7 @@ export default function HeroSection() {
                 />
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
 
