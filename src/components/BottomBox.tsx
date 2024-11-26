@@ -39,9 +39,9 @@ export default function BottomBox() {
 
             {/* Right side - Content */}
             <div className="w-full lg:w-1/2 space-y-6">
-              <span className="inline-flex items-center rounded-full bg-[#2B2456] px-3 py-1 text-sm font-medium text-blue-200">
-                EXCLUSIVE
-              </span>
+              <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
+                <h1 className="text-white font-medium"> EXCLUSIVE</h1>
+              </div>
 
               <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
                 HODL COMMUNITY
@@ -59,7 +59,7 @@ export default function BottomBox() {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#2B2456] to-[#1E1736] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)]"
+                    className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#2B2456] to-[#1E1736] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]"
                     aria-label={social.label}
                   >
                     <social.icon className="w-5 h-5 text-gray-200" />

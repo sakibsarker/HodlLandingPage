@@ -46,7 +46,7 @@ export default function HeroSection() {
   const loopedImages = [...navImages, ...navImages, ...navImages, ...navImages];
 
   return (
-    <div className="min-h-screen bg-[#0A0520] overflow-hidden">
+    <div className="min-h-screen overflow-hidden">
       {/* Navigation Icons */}
       <div className="w-full p-2 bg-[#110828]/80 backdrop-blur-sm border-b border-white/5">
         <div className="overflow-hidden">
@@ -85,9 +85,9 @@ export default function HeroSection() {
             src="/images/bannerimg.png"
             alt="Crypto Background"
             fill
-            className="object-cover opacity-200"
+            className="object-cover "
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0520]/10 to-[#0A0520]" />
+          <div className="absolute inset-0 bg-gradient-to-b " />
         </div>
 
         <div className="relative z-10 text-center space-y-8">
@@ -112,17 +112,16 @@ export default function HeroSection() {
             Welcome hodlers to your supreme crypto entertainment & gaming.
           </p>
           <button className="relative group">
-            {/* Blue border */}
-            <div className="absolute -inset-0.5 bg-blue-500 rounded-lg opacity-100" />
-
-            {/* Gradient glow effect */}
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#4044ED] to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200" />
-
-            {/* Button content */}
-            <div className="relative px-7 py-3 bg-[#1a1333] rounded-lg leading-none border-1 border-[#4044ED]">
-              <span className="text-white font-medium tracking-wide text-lg">
+            <div className="inline-flex px-9 py-4 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
+              <h1
+                className="text-white font-medium "
+                style={{
+                  textShadow:
+                    "0 0 12px #4044ED, 0 0 20px purple, 0 0 25px #4044ED, 0 0 30px purple",
+                }}
+              >
                 Become a member
-              </span>
+              </h1>
             </div>
           </button>
         </div>
@@ -130,13 +129,13 @@ export default function HeroSection() {
 
       {/* Feature Cards */}
 
-      <div className="mt-10 max-w-7xl mx-auto px-4 relative z-20 mb-96">
+      <div className=" max-w-7xl mx-auto px-4 relative mb-[30%]">
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div key={index}>
               <motion.div
                 key={index}
-                className={`absolute`}
+                className={`absolute `}
                 style={{
                   left: `${5 + index * 22}%`,
                   zIndex: index,

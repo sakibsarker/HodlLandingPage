@@ -40,9 +40,9 @@ export default function ImageBox() {
                 <Image
                   src={provider.image}
                   alt={provider.name}
-                  width={225}
+                  width={300}
                   height={300}
-                  className="w-full h-full object-cover rounded-sm"
+                  className="w-full object-cover rounded-sm"
                 />
 
                 <div className="mt-2">
@@ -77,7 +77,7 @@ export default function ImageBox() {
                   alt={provider.name}
                   width={225}
                   height={300}
-                  className="w-full h-full object-cover"
+                  className="w-full  object-cover rounded-sm"
                 />
 
                 <div className="mt-2">
