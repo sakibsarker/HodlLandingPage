@@ -93,13 +93,18 @@ export default function HeroSection() {
         <div className="relative z-10 text-center space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight flex items-center justify-center gap-4">
             YOU CAN
-            <Image
-              src="/images/hodllogo.png"
-              alt="logo"
-              height={250}
-              width={250}
-              className="object-cover"
-            />
+            <motion.div
+              animate={{ rotateY: [0, 180, 360] }}
+              transition={{ repeat: Infinity, duration: 3 }}
+            >
+              <Image
+                src="/images/hodllogo.png"
+                alt="logo"
+                height={250}
+                width={250}
+                className="object-cover"
+              />
+            </motion.div>
             HERE
           </h1>
 
