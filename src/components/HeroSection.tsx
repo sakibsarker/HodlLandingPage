@@ -85,9 +85,9 @@ export default function HeroSection() {
             src="/images/bannerimg.png"
             alt="Crypto Background"
             fill
-            className="object-cover opacity-100"
+            className="object-cover opacity-200"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0520]/80 to-[#0A0520]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0520]/10 to-[#0A0520]" />
         </div>
 
         <div className="relative z-10 text-center space-y-8">
@@ -111,19 +111,48 @@ export default function HeroSection() {
           <p className="text-xl text-gray-300">
             Welcome hodlers to your supreme crypto entertainment & gaming.
           </p>
+          <button className="relative group">
+            {/* Blue border */}
+            <div className="absolute -inset-0.5 bg-blue-500 rounded-lg opacity-100" />
 
-          <button className="px-8 py-3 bg-[#4044ED] text-white rounded-full hover:bg-[#4044ED]/90 transition-colors duration-200 font-medium">
-            Become a member
+            {/* Gradient glow effect */}
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#4044ED] to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200" />
+
+            {/* Button content */}
+            <div className="relative px-7 py-3 bg-[#1a1333] rounded-lg leading-none border-1 border-[#4044ED]">
+              <span className="text-white font-medium tracking-wide text-lg">
+                Become a member
+              </span>
+            </div>
           </button>
         </div>
       </div>
 
       {/* Feature Cards */}
-      <div className="mt-10 max-w-7xl mx-auto px-4 relative z-20 mb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div className="mt-10 max-w-7xl mx-auto px-4 relative z-20 mb-96">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div key={index}>
-              <div className="h-32 flex items-center justify-center">
+              <motion.div
+                key={index}
+                className={`absolute`}
+                style={{
+                  left: `${15 + index * 17}%`,
+                  zIndex: index,
+                }}
+                initial={{ opacity: 0, y: 20, rotateY: -30 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  rotateY: 0,
+                  transition: {
+                    duration: 0.4,
+                    ease: "easeOut",
+                  },
+                }}
+                viewport={{ once: true }}
+              >
                 <Image
                   src={feature.icon}
                   alt="bannerimage"
@@ -131,7 +160,7 @@ export default function HeroSection() {
                   height={200}
                   className="object-cover"
                 />
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>
