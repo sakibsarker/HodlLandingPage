@@ -44,24 +44,16 @@ export default function HeroSection() {
 
   const features = [
     {
-      title: "+300 crypto",
       icon: "/images/Group2085663741.png",
-      gradient: "from-blue-500/20 to-purple-500/20",
     },
     {
-      title: "Trusted and safe experience",
       icon: "/images/Group2085663746.png",
-      gradient: "from-indigo-500/20 to-blue-500/20",
     },
     {
-      title: "No KYC",
       icon: "/images/Group2085663743.png",
-      gradient: "from-blue-400/20 to-cyan-500/20",
     },
     {
-      title: "Premium leagues",
       icon: "/images/Group2085663745.png",
-      gradient: "from-purple-500/20 to-blue-500/20",
     },
   ];
 
@@ -98,9 +90,13 @@ export default function HeroSection() {
         <div className="relative z-10 text-center space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight flex items-center justify-center gap-4">
             YOU CAN
-            <span className="inline-block bg-[#4044ED] px-6 py-2 rounded-full transform hover:scale-105 transition-transform duration-200">
-              HODL
-            </span>
+            <Image
+              src="/images/hodllogo.png"
+              alt="logo"
+              height={250}
+              width={250}
+              className="object-cover"
+            />
             HERE
           </h1>
 
@@ -115,25 +111,19 @@ export default function HeroSection() {
       </div>
 
       {/* Feature Cards */}
-      <div className="max-w-7xl mx-auto px-4 -mt-32 relative z-20">
+      <div className="mt-10 max-w-7xl mx-auto px-4 relative z-20 mb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`rounded-2xl bg-gradient-to-br ${feature.gradient} p-6 backdrop-blur-lg border border-white/10 transform hover:scale-105 transition-transform duration-200`}
-            >
+            <div key={index}>
               <div className="h-32 flex items-center justify-center">
                 <Image
                   src={feature.icon}
-                  alt={feature.title}
-                  width={80}
-                  height={80}
-                  className="object-contain"
+                  alt="bannerimage"
+                  width={300}
+                  height={200}
+                  className="object-cover"
                 />
               </div>
-              <h3 className="text-center text-white font-medium mt-4">
-                {feature.title}
-              </h3>
             </div>
           ))}
         </div>
