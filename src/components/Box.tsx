@@ -21,13 +21,14 @@ export default function Box() {
                   <h1 className="text-white font-medium">WELCOME</h1>
                 </div>
 
-                <h2 className="text-4xl font-bold text-white mb-4">
-                  WITHDRAW INSTANTLY ANYTIME
+                <h2 className="text-4xl font-bold text-white mb-4 uppercase">
+                  Your new experience
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  Use the Payouts button to withdraw, usually instant within 1
-                  hour during business hours, or up to 24 hours. Choose from
-                  over 300 crypto coins. Transaction fees are not covered.
+                  We stand as your community, your gateway to entertainment, and
+                  your bridge to the realm of cryptocurrency. Your perceptions
+                  and wisdom are profoundly valued, and we will work to commence
+                  this voyage in unison with privacy and security!
                 </p>
               </div>
               <button className="bg-gradient-to-br from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-semibold transition-colors duration-200">
@@ -109,12 +110,13 @@ export default function Box() {
                 <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
                   <h1 className="text-white font-medium">SECURE</h1>
                 </div>
-                <h2 className="text-4xl font-bold text-white mb-4">DEPOSIT</h2>
+                <h2 className="text-4xl font-bold text-white mb-4">
+                  A TRUSTED & SAFE EXPERIENCE
+                </h2>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  You can securely deposit using the instant DEPOSIT button,
-                  accessing a variety of Layer 1 cryptocurrencies. With over 300
-                  supported, all transaction fees are fully covered and
-                  reimbursed.
+                  At hodlent, our company's guiding principle is to establish
+                  trust and security based on a free market ideology of open
+                  source.
                 </p>
               </div>
               <button className="bg-gradient-to-br from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-semibold transition-colors duration-200">
@@ -150,13 +152,13 @@ export default function Box() {
                   <h1 className="text-white font-medium">REWARS</h1>
                 </div>
 
-                <h2 className="text-4xl font-bold text-white mb-4">
-                  WITHDRAW INSTANTLY ANYTIME
+                <h2 className="text-4xl font-bold text-white mb-4 uppercase">
+                  10% cash Bonus
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  Use the Payouts button to withdraw, usually instant within 1
-                  hour during business hours, or up to 24 hours. Choose from
-                  over 300 crypto coins. Transaction fees are not covered.
+                  Receive 10% cash back on your deposit, automatically credited
+                  to your balance. For example, if you make a $10,000 deposit,
+                  your new balance will be $11,000.
                 </p>
               </div>
               <button className="bg-gradient-to-br from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-semibold transition-colors duration-200">

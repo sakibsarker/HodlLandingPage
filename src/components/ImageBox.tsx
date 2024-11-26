@@ -26,7 +26,7 @@ export default function ImageBox() {
             <h2 className="text-2xl font-bold text-white">LIVE GAMING</h2>
             <Link
               href="#"
-              className="text-sm text-gray-400 hover:text-white transition-colors px-4 py-1 rounded-full bg-[#1E1736]/60"
+              className="text-sm text-white hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
             >
               All Games
             </Link>
@@ -61,7 +61,7 @@ export default function ImageBox() {
             <h2 className="text-2xl font-bold text-white">DIGITAL CASINO</h2>
             <Link
               href="#"
-              className="text-sm text-gray-400 hover:text-white transition-colors px-4 py-1 rounded-full bg-[#1E1736]/60"
+              className="text-sm text-white hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
             >
               All Games
             </Link>
