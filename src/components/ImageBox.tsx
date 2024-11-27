@@ -18,7 +18,7 @@ export default function ImageBox() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1a1333] to-[#2a1f4d] p-6 md:p-12">
+    <div className="min-h-screen bg-gradient-to-br from-[#0D0827] to-[#0D0827]  bg-[#150B2E] p-6 md:p-12">
       <div className="max-w-[1400px] mx-auto space-y-12">
         {/* Live Gaming Section */}
         <section className="space-y-6">

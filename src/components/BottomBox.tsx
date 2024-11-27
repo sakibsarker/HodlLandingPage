@@ -19,7 +19,7 @@ export default function BottomBox() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#150B2E] p-6 md:p-12">
+    <div className="min-h-screen bg-gradient-to-br from-[#0D0827] to-[#0D0827]  bg-[#150B2E] p-6 md:p-12">
       <div className="max-w-7xl mx-auto">
         <div className="relative bg-[#1E1736]/60 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
