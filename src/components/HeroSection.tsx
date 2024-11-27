@@ -171,12 +171,14 @@ export default function HeroSection() {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="relative"
               >
-                <Image
+                <motion.img
                   src={feature.icon}
                   alt="Feature Icon"
                   width={360}
                   height={360}
                   className="object-contain"
+                  whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
+                  transition={{ type: "spring", stiffness: 300 }}
                 />
               </motion.div>
             ))}
