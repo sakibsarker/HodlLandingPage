@@ -119,8 +119,15 @@ export default function HeroSection() {
           <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight flex items-center justify-center gap-4">
             YOU CAN
             <motion.div
-              animate={{ rotateX: [0, 180, 360] }}
-              transition={{ repeat: Infinity, duration: 1 }}
+              animate={{
+                rotateX: [0, 90, -90, 0], // Quick flip sequence
+              }}
+              transition={{
+                repeat: Infinity, // Infinite loop
+                duration: 2, // Total animation duration (adjust as needed)
+                ease: "easeInOut", // Smooth easing
+                times: [0, 0.2, 0.8, 1], // Control keyframe timing
+              }}
             >
               <Image
                 src="/images/hodllogo.png"
@@ -157,10 +164,10 @@ export default function HeroSection() {
                   marginLeft:
                     scrollDirection === "down"
                       ? index > 0
-                        ? "-200px"
+                        ? "-50px"
                         : "0px"
                       : index > 0
-                      ? "-50px"
+                      ? "-200px"
                       : "0px",
                 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
