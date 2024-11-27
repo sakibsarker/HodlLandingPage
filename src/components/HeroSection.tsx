@@ -119,8 +119,8 @@ export default function HeroSection() {
           <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight flex items-center justify-center gap-4">
             YOU CAN
             <motion.div
-              animate={{ rotateY: [0, 180, 360] }}
-              transition={{ repeat: Infinity, duration: 3 }}
+              animate={{ rotateX: [0, 180, 360] }}
+              transition={{ repeat: Infinity, duration: 1 }}
             >
               <Image
                 src="/images/hodllogo.png"
@@ -138,19 +138,14 @@ export default function HeroSection() {
           </p>
           <button className="relative group">
             <div className="inline-flex px-9 py-4 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
-              <h1
-                className="text-white font-medium"
-                style={{
-                  textShadow:
-                    "0 0 12px #4044ED, 0 0 20px purple, 0 0 25px #4044ED, 0 0 30px purple",
-                }}
-              >
-                Become a member
-              </h1>
+              <h1 className="text-white font-medium">Become a member</h1>
             </div>
           </button>
         </div>
-
+        {/* style={{
+                  textShadow:
+                    "0 0 12px #4044ED, 0 0 20px purple, 0 0 25px #4044ED, 0 0 30px purple",
+                }} */}
         {/* Features Card */}
         <div className="relative mt-12 flex justify-center py-20">
           <div className="relative flex">
