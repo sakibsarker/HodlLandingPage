@@ -1,6 +1,7 @@
 "use client";
 import BottomBox from "@/components/BottomBox";
 import Box from "@/components/Box";
+import Boxtwo from "@/components/Boxtwo";
 
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
@@ -10,7 +11,8 @@ const page = () => {
   return (
     <>
       <HeroSection />
-      <Box />
+      {/* <Box /> */}
+      <Boxtwo />
       <ImageBox />
       <BottomBox />
     </>

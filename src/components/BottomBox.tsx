@@ -7,8 +7,17 @@ import {
   FaTelegram,
   FaReddit,
 } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export default function BottomBox() {
+  const fadeInVariant = {
+    hidden: { opacity: 0, y: 60 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
   const socialLinks = [
     { icon: FaXTwitter, href: "#", label: "Twitter" },
     { icon: FaInstagram, href: "#", label: "Instagram" },
@@ -21,19 +30,33 @@ export default function BottomBox() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0D0827] to-[#0D0827]  bg-[#150B2E] p-6 md:p-12">
       <div className="max-w-7xl mx-auto">
-        <div className="relative bg-[#1E1736]/60 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm">
+        <motion.div
+          className="relative bg-[#1E1736]/60 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInVariant}
+        >
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Left side - Image */}
             <div className="w-full lg:w-1/2">
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-[#1a1627]">
-                <Image
+                <motion.img
                   src="/images/imgbox.png"
                   alt="HODL Community Member"
                   width={800}
                   height={600}
                   className="object-cover"
+                  whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
+                  transition={{ type: "spring", stiffness: 300 }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#150B2E]/50 to-transparent" />
+                {/* <Image
+                  src="/images/imgbox.png"
+                  alt="HODL Community Member"
+                  width={800}
+                  height={600}
+                  className="object-cover"
+                /> */}
               </div>
             </div>
 
@@ -68,7 +91,7 @@ export default function BottomBox() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

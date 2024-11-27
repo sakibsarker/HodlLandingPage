@@ -1,7 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ImageBox() {
+  const fadeInVariant = {
+    hidden: { opacity: 0, y: 60 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
   const liveGamingProviders = [
     { name: "EvolutionGaming", image: "/images/Maskgroup.png" },
     { name: "SaGaming", image: "/images/Maskgroup2.png" },
@@ -21,7 +31,13 @@ export default function ImageBox() {
     <div className="min-h-screen bg-gradient-to-br from-[#0D0827] to-[#0D0827]  bg-[#150B2E] p-6 md:p-12">
       <div className="max-w-[1400px] mx-auto space-y-12">
         {/* Live Gaming Section */}
-        <section className="space-y-6">
+        <motion.div
+          className="space-y-6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInVariant}
+        >
           <div className="flex justify-between items-center">
             <h2 className="text-2xl font-bold text-white">LIVE GAMING</h2>
             <Link
@@ -37,13 +53,22 @@ export default function ImageBox() {
                 key={provider.name}
                 className="group relative overflow-hidden rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-105"
               >
-                <Image
+                <motion.img
                   src={provider.image}
                   alt={provider.name}
                   width={300}
                   height={300}
                   className="w-full object-cover rounded-sm"
+                  whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
+                  transition={{ type: "spring", stiffness: 300 }}
                 />
+                {/* <Image
+                  src={provider.image}
+                  alt={provider.name}
+                  width={300}
+                  height={300}
+                  className="w-full object-cover rounded-sm"
+                /> */}
 
                 <div className="mt-2">
                   <h3 className="text-white text-lg font-medium">
@@ -53,10 +78,16 @@ export default function ImageBox() {
               </div>
             ))}
           </div>
-        </section>
+        </motion.div>
 
         {/* Digital Casino Section */}
-        <section className="space-y-6 ">
+        <motion.div
+          className="space-y-6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInVariant}
+        >
           <div className="flex justify-between items-center">
             <h2 className="text-2xl font-bold text-white">DIGITAL CASINO</h2>
             <Link
@@ -72,13 +103,22 @@ export default function ImageBox() {
                 key={provider.name}
                 className="group relative overflow-hidden rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-105"
               >
-                <Image
+                <motion.img
                   src={provider.image}
                   alt={provider.name}
                   width={225}
                   height={300}
                   className="w-full  object-cover rounded-sm"
+                  whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
+                  transition={{ type: "spring", stiffness: 300 }}
                 />
+                {/* <Image
+                  src={provider.image}
+                  alt={provider.name}
+                  width={225}
+                  height={300}
+                  className="w-full  object-cover rounded-sm"
+                /> */}
 
                 <div className="mt-2">
                   <h3 className="text-white text-lg font-medium">
@@ -88,7 +128,7 @@ export default function ImageBox() {
               </div>
             ))}
           </div>
-        </section>
+        </motion.div>
       </div>
     </div>
   );
