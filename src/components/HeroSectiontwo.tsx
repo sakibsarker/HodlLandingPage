@@ -1,9 +1,7 @@
 import Image from "next/image";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
-export default function HeroSection() {
-  const [scrollDirection, setScrollDirection] = useState("up");
+export default function HeroSectiontwo() {
   const navImages = [
     "/images/Symbol.png",
     "/images/Symbol1.png",
@@ -45,27 +43,6 @@ export default function HeroSection() {
     },
   ];
 
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY) {
-        setScrollDirection("down"); // Scrolling down
-      } else {
-        setScrollDirection("up"); // Scrolling up
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   const loopedImages = [...navImages, ...navImages, ...navImages, ...navImages];
 
   return (
@@ -102,20 +79,18 @@ export default function HeroSection() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative min-h-[80vh] flex flex-col items-center justify-center">
-        {/* Background Image */}
+      <div className="relative min-h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
             src="/images/bannerimg.png"
             alt="Crypto Background"
             fill
-            className="object-cover"
+            className="object-cover "
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b " />
         </div>
 
-        {/* Hero Text and Content */}
-        <div className="relative z-10 text-center space-y-8 py-20">
+        <div className="relative z-10 text-center space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight flex items-center justify-center gap-4">
             YOU CAN
             <motion.div
@@ -139,7 +114,7 @@ export default function HeroSection() {
           <button className="relative group">
             <div className="inline-flex px-9 py-4 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
               <h1
-                className="text-white font-medium"
+                className="text-white font-medium "
                 style={{
                   textShadow:
                     "0 0 12px #4044ED, 0 0 20px purple, 0 0 25px #4044ED, 0 0 30px purple",
@@ -150,37 +125,43 @@ export default function HeroSection() {
             </div>
           </button>
         </div>
+      </div>
 
-        {/* Features Card */}
-        <div className="relative mt-12 flex justify-center py-20">
-          <div className="relative flex">
-            {features.map((feature, index) => (
+      {/* Feature Cards */}
+
+      <div className=" max-w-7xl mx-auto px-4 relative mb-[30%]">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {features.map((feature, index) => (
+            <div key={index}>
               <motion.div
                 key={index}
-                initial={{ marginLeft: index > 0 ? "-20px" : "0px" }}
-                animate={{
-                  marginLeft:
-                    scrollDirection === "down"
-                      ? index > 0
-                        ? "-200px"
-                        : "0px"
-                      : index > 0
-                      ? "-50px"
-                      : "0px",
+                className={`absolute `}
+                style={{
+                  left: `${5 + index * 22}%`,
+                  zIndex: index,
                 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="relative"
+                initial={{ opacity: 0, y: 20, rotateY: -30 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  rotateY: 0,
+                  transition: {
+                    duration: 0.4,
+                    ease: "easeOut",
+                  },
+                }}
+                viewport={{ once: true }}
               >
                 <Image
                   src={feature.icon}
-                  alt="Feature Icon"
-                  width={360}
-                  height={360}
-                  className="object-contain"
+                  alt="bannerimage"
+                  width={350}
+                  height={300}
+                  className="object-cover"
                 />
               </motion.div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

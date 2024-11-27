@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Box() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1a1333] to-[#2a1f4d] p-6 md:p-12">
+    <div className="min-h-screen bg-gradient-to-br from-[#0D0827] to-[#0D0827] p-6 md:p-12">
       <div className="max-w-7xl mx-auto space-y-6">
         {/* Withdraw Section */}
         <div className="relative bg-[#1E1736]/60 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm">
