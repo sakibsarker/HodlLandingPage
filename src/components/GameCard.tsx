@@ -29,7 +29,7 @@ export default function GameCard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0D0827] to-[#0D0827]  bg-[#150B2E] p-6 md:p-12">
-      <div className="max-w-[1400px] mx-auto space-y-12">
+      <div className="max-w-7xl mx-auto space-y-12">
         {/* Live Gaming Section */}
         <motion.div
           className="space-y-6"
