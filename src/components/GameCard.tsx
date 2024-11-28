@@ -39,7 +39,10 @@ export default function GameCard() {
           variants={fadeInVariant}
         >
           <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-bold text-white">LIVE GAMING</h2>
+            <h2 className="text-4xl font-bold tracking-wider text-white uppercase">
+              LIVE GAMING
+            </h2>
+
             <Link
               href="#"
               className="text-sm text-white hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
@@ -62,13 +65,6 @@ export default function GameCard() {
                   whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
                   transition={{ type: "spring", stiffness: 300 }}
                 />
-                {/* <Image
-                  src={provider.image}
-                  alt={provider.name}
-                  width={300}
-                  height={300}
-                  className="w-full object-cover rounded-sm"
-                /> */}
 
                 <div className="mt-2">
                   <h3 className="text-white text-lg font-medium">
@@ -89,7 +85,10 @@ export default function GameCard() {
           variants={fadeInVariant}
         >
           <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-bold text-white">DIGITAL CASINO</h2>
+            <h2 className="text-4xl font-bold tracking-wider text-white uppercase">
+              DIGITAL CASINO
+            </h2>
+
             <Link
               href="#"
               className="text-sm text-white hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
@@ -112,13 +111,6 @@ export default function GameCard() {
                   whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
                   transition={{ type: "spring", stiffness: 300 }}
                 />
-                {/* <Image
-                  src={provider.image}
-                  alt={provider.name}
-                  width={225}
-                  height={300}
-                  className="w-full  object-cover rounded-sm"
-                /> */}
 
                 <div className="mt-2">
                   <h3 className="text-white text-lg font-medium">

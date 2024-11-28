@@ -75,11 +75,14 @@ export default function CommunityCard() {
                 HODL COMMUNITY
               </h2>
 
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Join the hodle community, a space to share your thoughts,
-                experiences, and connect with our elite clients. Discover the
-                perfect venue for your game, and explore additional promotions,
-                gifts, and more. Your voice is important to us.
+              <p className="text-lg  tracking-wide font-inter text-white leading-snug ">
+                <span className="text-lg font-bold tracking-wide font-inter text-white">
+                  Join the hodle community,
+                </span>{" "}
+                a space to share your thoughts, experiences, and connect with
+                our elite clients. Discover the perfect venue for your game, and
+                explore additional promotions, gifts, and more. Your voice is
+                important to us.
               </p>
 
               <div className="flex flex-wrap gap-4">

@@ -44,14 +44,14 @@ export default function CardComponents() {
                 <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
                   Your new experience
                 </h2>
-                <p className="text-white leading-snug text-xl font-light font-inter tracking-wide">
-                  <span className="text-xl font-inter tracking-wide font-bold">
+                <p className="text-lg  tracking-wide font-inter text-white leading-snug ">
+                  <span className="text-lg font-bold tracking-wide font-inter text-white">
                     We stand as your community,
                   </span>{" "}
                   your gateway to entertainment, and your bridge to the realm of
-                  cryptocurrency. Your perceptions and wisdom are <br />
-                  profoundly valued, and we will work to commence <br />
-                  this voyage in unison with privacy and security!
+                  cryptocurrency. Your perceptions and wisdom are profoundly
+                  valued, and we will work to commence this voyage in unison
+                  with privacy and security!
                 </p>
                 <button className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200">
                   Join now
@@ -80,11 +80,13 @@ export default function CardComponents() {
                   DEPOSIT
                 </h2>
 
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  You can securely deposit using the instant DEPOSIT button,
-                  accessing a variety of Layer 1 cryptocurrencies. With over 300
-                  supported, all transaction fees are fully covered and
-                  reimbursed.
+                <p className="text-lg  tracking-wide font-inter text-white leading-snug ">
+                  <span className="text-lg font-bold tracking-wide font-inter text-white">
+                    You can securely deposit
+                  </span>{" "}
+                  using the instant DEPOSIT button, accessing a variety of Layer
+                  1 cryptocurrencies. With over 300 supported, all transaction
+                  fees are fully covered and reimbursed.
                 </p>
               </div>
               <button className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200">
@@ -136,10 +138,13 @@ export default function CardComponents() {
                   WITHDRAW INSTANTLY ANYTIME
                 </h2>
 
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Use the Payouts button to withdraw, usually instant within 1
-                  hour during business hours, or up to 24 hours. Choose from
-                  over 300 crypto coins. Transaction fees are not covered.
+                <p className="text-lg  tracking-wide font-inter text-white leading-snug ">
+                  <span className="text-lg font-bold tracking-wide font-inter text-white">
+                    Use the Payouts button to withdraw,
+                  </span>{" "}
+                  usually instant within 1 hour during business hours, or up to
+                  24 hours. Choose from over 300 crypto coins. Transaction fees
+                  are not covered.
                 </p>
               </div>
               <button className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200">
@@ -168,10 +173,12 @@ export default function CardComponents() {
                   A TRUSTED & SAFE EXPERIENCE
                 </h2>
 
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  At hodlent, our company's guiding principle is to establish
-                  trust and security based on a free market ideology of open
-                  source.
+                <p className="text-lg  tracking-wide font-inter text-white leading-snug ">
+                  <span className="text-lg font-bold tracking-wide font-inter text-white">
+                    At hodlent,
+                  </span>{" "}
+                  our company's guiding principle is to establish trust and
+                  security based on a free market ideology of open source.
                 </p>
               </div>
               <button className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200">
@@ -210,13 +217,6 @@ export default function CardComponents() {
                 whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
                 transition={{ type: "spring", stiffness: 300 }}
               />
-              {/* <Image
-                src="/images/Group2085664308.png"
-                width={450}
-                height={450}
-                alt="Phone with crypto icons"
-                className="object-contain"
-              /> */}
             </div>
             <div className="space-y-6 max-w-xl">
               <div>
@@ -228,10 +228,13 @@ export default function CardComponents() {
                   10% cash Bonus
                 </h2>
 
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Receive 10% cash back on your deposit, automatically credited
-                  to your balance. For example, if you make a $10,000 deposit,
-                  your new balance will be $11,000.
+                <p className="text-lg  tracking-wide font-inter text-white leading-snug ">
+                  <span className="text-lg font-bold tracking-wide font-inter text-white">
+                    Receive 10% cash back on
+                  </span>{" "}
+                  your deposit, automatically credited to your balance. For
+                  example, if you make a $10,000 deposit, your new balance will
+                  be $11,000.
                 </p>
               </div>
               <button className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200">
