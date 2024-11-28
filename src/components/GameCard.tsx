@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function ImageBox() {
+export default function GameCard() {
   const fadeInVariant = {
     hidden: { opacity: 0, y: 60 },
     visible: {

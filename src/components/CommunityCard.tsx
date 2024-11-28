@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-export default function BottomBox() {
+export default function CommunityCard() {
   const fadeInVariant = {
     hidden: { opacity: 0, y: 60 },
     visible: {
@@ -31,15 +31,14 @@ export default function BottomBox() {
     <div className="min-h-screen bg-gradient-to-br from-[#0D0827] to-[#0D0827]  bg-[#150B2E] p-6 md:p-12">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          className="relative bg-[#1E1736]/60 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm"
+          className="relative bg-[#1E1736]/60 border-2 border-[#1E1736]/80 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
           variants={fadeInVariant}
         >
           <div className="flex flex-col lg:flex-row gap-12 items-center">
-            {/* Left side - Image */}
-            <div className="w-full lg:w-1/2">
+            {/* <div className="w-full lg:w-1/2">
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-[#1a1627]">
                 <motion.img
                   src="/images/imgbox.png"
@@ -50,25 +49,31 @@ export default function BottomBox() {
                   whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
                   transition={{ type: "spring", stiffness: 300 }}
                 />
-                {/* <Image
-                  src="/images/imgbox.png"
-                  alt="HODL Community Member"
-                  width={800}
-                  height={600}
-                  className="object-cover"
-                /> */}
               </div>
+            </div> */}
+
+            <div className="relative w-full md:w-[450px] h-[450px] flex justify-center items-center">
+              <motion.img
+                src="/images/imgbox.png"
+                alt="HODL Community Member"
+                width={800}
+                height={600}
+                className="object-cover"
+                whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
+                transition={{ type: "spring", stiffness: 300 }}
+              />
             </div>
 
             {/* Right side - Content */}
             <div className="w-full lg:w-1/2 space-y-6">
               <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
-                <h1 className="text-white font-medium"> EXCLUSIVE</h1>
+                <h1 className="text-white font-inter tracking-wide font-medium">
+                  EXCLUSIVE
+                </h1>
               </div>
-
-              <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+              <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
                 HODL COMMUNITY
-              </h1>
+              </h2>
 
               <p className="text-lg text-gray-300 leading-relaxed">
                 Join the hodle community, a space to share your thoughts,
