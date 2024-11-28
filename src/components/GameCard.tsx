@@ -45,7 +45,7 @@ export default function GameCard() {
 
             <Link
               href="#"
-              className="text-sm text-white hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
+              className="text-lg text-white font-inter  tracking-wider font-medium hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
             >
               All Games
             </Link>
@@ -91,7 +91,7 @@ export default function GameCard() {
 
             <Link
               href="#"
-              className="text-sm text-white hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
+              className="text-lg text-white font-inter  tracking-wider font-medium hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
             >
               All Games
             </Link>
@@ -100,7 +100,7 @@ export default function GameCard() {
             {digitalCasinoProviders.map((provider) => (
               <div
                 key={provider.name}
-                className="group relative overflow-hidden rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-105"
+                className="group  relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
               >
                 <motion.img
                   src={provider.image}
