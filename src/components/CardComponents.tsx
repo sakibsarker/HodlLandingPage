@@ -177,7 +177,7 @@ export default function CardComponents() {
                   <span className="text-lg font-bold tracking-wide font-inter text-white">
                     At hodlent,
                   </span>{" "}
-                  our company's guiding principle is to establish trust and
+                  our company&apos;s guiding principle is to establish trust and
                   security based on a free market ideology of open source.
                 </p>
               </div>
