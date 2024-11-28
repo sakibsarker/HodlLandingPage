@@ -45,7 +45,7 @@ export default function GameCard() {
 
             <Link
               href="#"
-              className="text-lg text-white font-inter  tracking-wider font-medium hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
+              className="text-lg text-white font-inter tracking-wider font-medium hover:text-white transition-all duration-300 transform hover:scale-105 hover:rotate-2 px-4 py-1 rounded-md bg-[#1E1736]"
             >
               All Games
             </Link>
@@ -54,7 +54,7 @@ export default function GameCard() {
             {liveGamingProviders.map((provider) => (
               <div
                 key={provider.name}
-                className="group relative overflow-hidden rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-105"
+                className="group relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
               >
                 <motion.img
                   src={provider.image}
@@ -66,8 +66,8 @@ export default function GameCard() {
                   transition={{ type: "spring", stiffness: 300 }}
                 />
 
-                <div className="mt-2">
-                  <h3 className="text-white text-lg font-medium">
+                <div className="my-5">
+                  <h3 className="text-white text-xl font-medium font-inter">
                     {provider.name}
                   </h3>
                 </div>
@@ -91,7 +91,7 @@ export default function GameCard() {
 
             <Link
               href="#"
-              className="text-lg text-white font-inter  tracking-wider font-medium hover:text-white transition-colors px-4 py-1 rounded-sm bg-[#1E1736]"
+              className="text-lg text-white font-inter tracking-wider font-medium hover:text-white transition-all duration-300 transform hover:scale-105 hover:rotate-2 px-4 py-1 rounded-md bg-[#1E1736]"
             >
               All Games
             </Link>
@@ -112,8 +112,8 @@ export default function GameCard() {
                   transition={{ type: "spring", stiffness: 300 }}
                 />
 
-                <div className="mt-2">
-                  <h3 className="text-white text-lg font-medium">
+                <div className="my-5">
+                  <h3 className="text-white text-xl font-medium font-inter">
                     {provider.name}
                   </h3>
                 </div>
