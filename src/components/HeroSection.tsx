@@ -116,7 +116,7 @@ export default function HeroSection() {
 
         {/* Hero Text and Content */}
         <div className="relative z-10 text-center space-y-8 py-20">
-          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-5xl md:text-8xl font-bold text-white tracking-wider flex items-center justify-center gap-4">
             YOU CAN
             <motion.div
               animate={{
@@ -140,12 +140,14 @@ export default function HeroSection() {
             HERE
           </h1>
 
-          <p className="text-xl text-gray-300">
+          <p className="text-xl  tracking-wider font-inter text-gray-300">
             Welcome hodlers to your supreme crypto entertainment & gaming.
           </p>
           <button className="relative group">
             <div className="inline-flex px-9 py-4 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 hover:shadow-[0_0_15px_rgba(78,56,216,0.3)] shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
-              <h1 className="text-white font-medium">Become a member</h1>
+              <h1 className="text-white font-inter  tracking-wider font-medium">
+                Become a member
+              </h1>
             </div>
           </button>
         </div>
