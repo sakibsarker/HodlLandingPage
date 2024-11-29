@@ -11,7 +11,7 @@ export default function CardComponents() {
     },
   };
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0D0827] to-[#0D0827] p-6 md:p-12">
+    <div className="min-h-full bg-gradient-to-br from-[#0D0827] to-[#0D0827] p-6 md:p-12">
       <div className="max-w-7xl mx-auto space-y-6">
         {/* Withdraw Section */}
         <motion.div
