@@ -71,7 +71,7 @@ export default function HeroSection() {
   return (
     <div className="min-h-full overflow-hidden bg-[#0D0827] ">
       {/* Hero Section */}
-      <div className="relative min-h-[80vh] flex flex-col items-center justify-center">
+      <div className="relative min-h-full flex flex-col items-center justify-center">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -114,7 +114,7 @@ export default function HeroSection() {
         </div>
         {/* Hero Text and Content */}
         <div className="relative z-10 text-center space-y-8 py-5 px-5">
-          <h1 className="text-5xl sm:text-4xl md:text-8xl font-bold text-white tracking-wider flex items-center justify-center whitespace-nowrap">
+          <h1 className="text-5xl sm:text-4xl md:text-8xl font-bold text-white tracking-wider gap-1 flex items-center justify-center whitespace-nowrap">
             YOU CAN
             <motion.div
               animate={{
@@ -151,7 +151,7 @@ export default function HeroSection() {
         </div>
 
         {/* Features Card */}
-        <div className="relative mt-12 flex justify-center py-20">
+        <div className="relative mt-0 sm:mt-12 flex justify-center py-5 sm:py-20">
           <div className="relative flex">
             {features.map((feature, index) => (
               <motion.div

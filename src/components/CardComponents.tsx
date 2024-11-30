@@ -221,7 +221,9 @@ export default function CardComponents() {
             <div className="space-y-6 max-w-xl">
               <div>
                 <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
-                  <h1 className="text-white font-medium">REWARS</h1>
+                  <h1 className="text-white font-inter tracking-wide font-medium">
+                    REWARS
+                  </h1>
                 </div>
 
                 <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
