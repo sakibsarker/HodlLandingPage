@@ -83,7 +83,7 @@ export default function HeroSection() {
           />
         </div>
         {/* Navigation Icons */}
-        <div className="w-full p-2 bg-gray-800/70 backdrop-blur-sm border-b border-white/5">
+        <div className="w-full p-2 bg-gray-800/70 backdrop-blur-sm ">
           <div className="overflow-hidden">
             <motion.div
               className="flex gap-4"
