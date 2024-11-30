@@ -69,38 +69,7 @@ export default function HeroSection() {
   const loopedImages = [...navImages, ...navImages, ...navImages, ...navImages];
 
   return (
-    <div className="min-h-full overflow-hidden">
-      {/* Navigation Icons */}
-      <div className="w-full p-2 bg-[#110828]/80 backdrop-blur-sm border-b border-white/5">
-        <div className="overflow-hidden">
-          <motion.div
-            className="flex gap-4"
-            animate={{ x: ["0%", "-50%"] }} // Adjust "-50%" based on content
-            transition={{
-              repeat: Infinity,
-              repeatType: "loop",
-              duration: 20, // Adjust to control speed
-              ease: "linear",
-            }}
-          >
-            {loopedImages.map((imageSrc, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-10 h-10 rounded-lg shadow-lg hover:scale-110 transition-transform duration-200 cursor-pointer"
-              >
-                <Image
-                  src={imageSrc}
-                  alt={`Navigation Icon ${index + 1}`}
-                  width={40}
-                  height={40}
-                  className="object-contain"
-                />
-              </div>
-            ))}
-          </motion.div>
-        </div>
-      </div>
-
+    <div className="min-h-full overflow-hidden bg-[#0D0827] ">
       {/* Hero Section */}
       <div className="relative min-h-[80vh] flex flex-col items-center justify-center">
         {/* Background Image */}
@@ -108,14 +77,43 @@ export default function HeroSection() {
           <Image
             src="/images/bannerimg.png"
             alt="Crypto Background"
-            fill
+            height={1000}
+            width={1800}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent" />
         </div>
-
+        {/* Navigation Icons */}
+        <div className="w-full p-2 bg-gray-800/70 backdrop-blur-sm border-b border-white/5">
+          <div className="overflow-hidden">
+            <motion.div
+              className="flex gap-4"
+              animate={{ x: ["0%", "-50%"] }} // Adjust "-50%" based on content
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 20, // Adjust to control speed
+                ease: "linear",
+              }}
+            >
+              {loopedImages.map((imageSrc, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-10 h-10 rounded-lg shadow-lg hover:scale-110 transition-transform duration-200 cursor-pointer"
+                >
+                  <Image
+                    src={imageSrc}
+                    alt={`Navigation Icon ${index + 1}`}
+                    width={40}
+                    height={40}
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
         {/* Hero Text and Content */}
-        <div className="relative z-10 text-center space-y-8 py-20 px-5">
+        <div className="relative z-10 text-center space-y-8 py-5 px-5">
           <h1 className="text-5xl sm:text-4xl md:text-8xl font-bold text-white tracking-wider flex items-center justify-center whitespace-nowrap">
             YOU CAN
             <motion.div
