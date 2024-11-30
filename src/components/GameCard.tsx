@@ -50,7 +50,7 @@ export default function GameCard() {
               All Games
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {liveGamingProviders.map((provider) => (
               <div
                 key={provider.name}
@@ -96,7 +96,7 @@ export default function GameCard() {
               All Games
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {digitalCasinoProviders.map((provider) => (
               <div
                 key={provider.name}
