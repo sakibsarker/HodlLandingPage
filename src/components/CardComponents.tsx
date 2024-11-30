@@ -22,7 +22,7 @@ export default function CardComponents() {
           variants={fadeInVariant}
         >
           <div className="flex flex-col-reverse md:flex-row justify-between items-center">
-            <div className="relative w-full md:w-[450px] h-[450px] flex justify-center items-center">
+            <div className="relative w-full h-full md:w-[450px] md:h-[450px] flex justify-center items-center">
               <motion.img
                 src="/images/Group2085664289.png"
                 width={450}
@@ -41,7 +41,7 @@ export default function CardComponents() {
                   </h1>
                 </div>
 
-                <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
+                <h2 className="text-5xl font-bebasNeue font-bold tracking-wider text-white my-5 uppercase">
                   Your new experience
                 </h2>
                 <p className="text-lg  tracking-wide font-inter text-white leading-snug ">
@@ -53,7 +53,7 @@ export default function CardComponents() {
                   valued, and we will work to commence this voyage in unison
                   with privacy and security!
                 </p>
-                <button className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200">
+                <button className="bg-gradient-to-br mb-5 mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200">
                   Join now
                 </button>
               </div>
@@ -76,7 +76,7 @@ export default function CardComponents() {
                     NO KYC
                   </h1>
                 </div>
-                <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
+                <h2 className="text-5xl font-bebasNeue font-bold tracking-wider text-white my-5 uppercase">
                   DEPOSIT
                 </h2>
 
@@ -93,7 +93,7 @@ export default function CardComponents() {
                 Join now
               </button>
             </div>
-            <div className="relative w-full md:w-[450px] h-[450px] flex justify-center items-center">
+            <div className="relative w-full h-full md:w-[450px] md:h-[450px] flex justify-center items-center">
               <motion.img
                 src="/images/Group2085664286.png"
                 width={450}
@@ -116,7 +116,7 @@ export default function CardComponents() {
           variants={fadeInVariant}
         >
           <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
-            <div className="relative w-full md:w-[450px] h-[450px] flex justify-center items-center">
+            <div className="relative w-full h-full md:w-[450px] md:h-[450px] flex justify-center items-center">
               <motion.img
                 src="/images/Group2085664285.png"
                 width={450}
@@ -134,7 +134,7 @@ export default function CardComponents() {
                     NO KYC
                   </h1>
                 </div>
-                <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
+                <h2 className="text-5xl font-bebasNeue font-bold tracking-wider text-white my-5 uppercase">
                   WITHDRAW INSTANTLY ANYTIME
                 </h2>
 
@@ -169,7 +169,7 @@ export default function CardComponents() {
                     SECURE
                   </h1>
                 </div>
-                <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
+                <h2 className="text-5xl font-bebasNeue font-bold tracking-wider text-white my-5 uppercase">
                   A TRUSTED & SAFE EXPERIENCE
                 </h2>
 
@@ -185,7 +185,7 @@ export default function CardComponents() {
                 Join now
               </button>
             </div>
-            <div className="relative w-full md:w-[450px] h-[450px] flex justify-center items-center">
+            <div className="relative w-full h-full md:w-[450px] md:h-[450px] flex justify-center items-center">
               <motion.img
                 src="/images/Group2085664287.png"
                 width={450}
@@ -207,7 +207,7 @@ export default function CardComponents() {
           variants={fadeInVariant}
         >
           <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
-            <div className="relative w-full md:w-[450px] h-[450px] flex justify-center items-center">
+            <div className="relative w-full h-full md:w-[450px] md:h-[450px] flex justify-center items-center">
               <motion.img
                 src="/images/Group2085664308.png"
                 width={450}
@@ -226,7 +226,7 @@ export default function CardComponents() {
                   </h1>
                 </div>
 
-                <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
+                <h2 className="text-5xl font-bebasNeue font-bold tracking-wider text-white my-5 uppercase">
                   10% cash Bonus
                 </h2>
 

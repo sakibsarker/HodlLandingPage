@@ -66,7 +66,15 @@ export default function HeroSection() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const loopedImages = [...navImages, ...navImages, ...navImages, ...navImages];
+  const loopedImages = [
+    ...navImages,
+    ...navImages,
+    ...navImages,
+    ...navImages,
+    ...navImages,
+    ...navImages,
+    ...navImages,
+  ];
 
   return (
     <div className="min-h-full overflow-hidden bg-[#0D0827] ">
@@ -83,10 +91,10 @@ export default function HeroSection() {
           />
         </div>
         {/* Navigation Icons */}
-        <div className="w-full p-2 bg-gray-800/70 backdrop-blur-sm ">
+        <div className="w-full p-1 bg-gray-800/70 backdrop-blur-sm ">
           <div className="overflow-hidden">
             <motion.div
-              className="flex gap-4"
+              className="flex "
               animate={{ x: ["0%", "-50%"] }} // Adjust "-50%" based on content
               transition={{
                 repeat: Infinity,
@@ -98,13 +106,13 @@ export default function HeroSection() {
               {loopedImages.map((imageSrc, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-10 h-10 rounded-lg shadow-lg hover:scale-110 transition-transform duration-200 cursor-pointer"
+                  className="flex-shrink-0 shadow-lg hover:scale-110 transition-transform duration-400 cursor-pointer"
                 >
                   <Image
                     src={imageSrc}
                     alt={`Navigation Icon ${index + 1}`}
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                     className="object-contain"
                   />
                 </div>
@@ -113,8 +121,8 @@ export default function HeroSection() {
           </div>
         </div>
         {/* Hero Text and Content */}
-        <div className="relative z-10 text-center space-y-8 py-5 px-5">
-          <h1 className="text-5xl sm:text-4xl md:text-8xl font-bold text-white tracking-wider gap-1 flex items-center justify-center whitespace-nowrap">
+        <div className="relative z-10 text-center space-y-8 pt-20 px-5">
+          <h1 className="text-5xl sm:text-4xl font-bebasNeue md:text-8xl font-bold text-white tracking-wider gap-2 flex items-center justify-center whitespace-nowrap">
             YOU CAN
             <motion.div
               animate={{
@@ -151,7 +159,7 @@ export default function HeroSection() {
         </div>
 
         {/* Features Card */}
-        <div className="relative mt-0 sm:mt-12 flex justify-center py-5 sm:py-20">
+        <div className="relative mt-0 sm:mt-12 flex justify-center py-20">
           <div className="relative flex">
             {features.map((feature, index) => (
               <motion.div

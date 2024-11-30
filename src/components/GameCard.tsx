@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 export default function GameCard() {
   const fadeInVariant = {
@@ -39,7 +42,7 @@ export default function GameCard() {
           variants={fadeInVariant}
         >
           <div className="flex justify-between items-center">
-            <h2 className="text-4xl font-bold tracking-wider text-white uppercase">
+            <h2 className="text-4xl font-bold font-bebasNeue tracking-wider text-white uppercase">
               LIVE GAMING
             </h2>
 
@@ -67,7 +70,9 @@ export default function GameCard() {
                 />
 
                 <div className="my-5">
-                  <h3 className="text-white text-xl font-medium font-inter">
+                  <h3
+                    className={`text-white text-sm font-bold tracking-widest ${orbitron.className}`}
+                  >
                     {provider.name}
                   </h3>
                 </div>
@@ -85,7 +90,7 @@ export default function GameCard() {
           variants={fadeInVariant}
         >
           <div className="flex justify-between items-center">
-            <h2 className="text-4xl font-bold tracking-wider text-white uppercase">
+            <h2 className="text-4xl font-bebasNeue font-bold tracking-wider text-white uppercase">
               DIGITAL CASINO
             </h2>
 
@@ -113,7 +118,9 @@ export default function GameCard() {
                 />
 
                 <div className="my-5">
-                  <h3 className="text-white text-xl font-medium font-inter">
+                  <h3
+                    className={`text-white text-sm font-bold tracking-widest ${orbitron.className}`}
+                  >
                     {provider.name}
                   </h3>
                 </div>

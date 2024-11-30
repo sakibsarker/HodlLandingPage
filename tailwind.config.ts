@@ -20,6 +20,7 @@ const config: Config = {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        bebasNeue: ["var(--bebasNeue)"],
       },
     },
   },

@@ -38,21 +38,7 @@ export default function CommunityCard() {
           variants={fadeInVariant}
         >
           <div className="flex flex-col lg:flex-row gap-12 items-center">
-            {/* <div className="w-full lg:w-1/2">
-              <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-[#1a1627]">
-                <motion.img
-                  src="/images/imgbox.png"
-                  alt="HODL Community Member"
-                  width={800}
-                  height={600}
-                  className="object-cover"
-                  whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
-                  transition={{ type: "spring", stiffness: 300 }}
-                />
-              </div>
-            </div> */}
-
-            <div className="relative w-full md:w-[450px] h-[450px] flex justify-center items-center">
+            <div className="relative w-full h-full md:w-[450px] md:h-[450px] flex justify-center items-center">
               <motion.img
                 src="/images/imgbox.png"
                 alt="HODL Community Member"
@@ -71,7 +57,7 @@ export default function CommunityCard() {
                   EXCLUSIVE
                 </h1>
               </div>
-              <h2 className="text-5xl font-bold tracking-wider text-white my-5 uppercase">
+              <h2 className="text-5xl font-bebasNeue font-bold tracking-wider text-white my-5 uppercase">
                 HODL COMMUNITY
               </h2>
 
@@ -85,7 +71,7 @@ export default function CommunityCard() {
                 important to us.
               </p>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex gap-2 justify-start items-center">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
